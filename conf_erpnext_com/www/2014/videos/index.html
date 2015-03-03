@@ -1,5 +1,3 @@
-# Videos
-
 {% set erpnext = [{
 		"label": "Rushabh Mehta",
 		"name": "rushabh-mehta",
@@ -58,35 +56,38 @@
 		"text": "ERPNext Users from across the globe took time to say hello and share their experiences with ERPNext for the 2014 Conference."},
 ] %}
 
-{% macro videohtml(l) %}
-{% for v in l %}
-<div class="row web-list-item">
-	<div class="col-sm-3">
-        <h3>&nbsp;</h3>
-		<a href="/2014/videos/{{ v.name }}">
-			<img src="/assets/conf_erpnext_com/images/conf/videos/{{ v.name }}.jpg" class="no-shadow">
-		</a>
-	</div>
-	<div class="col-sm-9">
-		<h3><a href="/2014/videos/{{ v.name }}">{{ v.label }}</a></h3>
-		{{ v.text }}
+{%- macro videohtml(l) -%}
+{%- for v in l -%}
+<div class="website-list">
+	<div class="row web-list-item">
+		<div class="col-sm-3" style="padding-top: 12px;">
+			<a href="/2014/videos/{{ v.name }}">
+				<img src="/assets/conf_erpnext_com/images/conf/videos/{{ v.name }}.jpg" class="no-shadow">
+			</a>
+		</div>
+		<div class="col-sm-9">
+			<h3><a href="/2014/videos/{{ v.name }}">{{ v.label }}</a></h3>
+			{{ v.text }}
+		</div>
 	</div>
 </div>
-{% endfor %}
-{% endmacro %}
+{%- endfor -%}
+{%- endmacro -%}
 
-### Team Videos
+<h1>Videos</h1>
 
----
+<div class="page-padding team-videos">
+	<h3>Team Videos</h3>
+	{{ videohtml(erpnext) }}
+</div>
 
-{{ videohtml(erpnext) }}
+<div class="page-padding user-videos" name="user">
+	<h3>User Videos</h3>
+	{{ videohtml(users) }}
+</div>
 
-<a name="user"></a>
+<div class="page-padding community-videos" style="padding-bottom: 60px;">
+	<h3>Global Community</h3>
+	{{ videohtml(community) }}
+</div>
 
-### User Videos
-
-{{ videohtml(users) }}
-
-### Global Community
-
-{{ videohtml(community) }}
