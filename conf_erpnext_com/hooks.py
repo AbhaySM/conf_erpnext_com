@@ -117,3 +117,4 @@ website_context = {
 # 	"frappe.desk.doctype.event.event.get_events": "conf_erpnext_com.event.get_events"
 # }
 
+fixtures = ["Contact Us Settings"]
