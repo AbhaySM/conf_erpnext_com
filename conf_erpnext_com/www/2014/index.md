@@ -28,5 +28,5 @@ Thanks to [@paraskuhad](https://twitter.com/paraskuhad) who took time out to tak
 
 ---
 
-[Contact us for any queries](https://frappe.io/contact)
+[Contact us for any queries](https://about.frappe.io/#contact)
 
