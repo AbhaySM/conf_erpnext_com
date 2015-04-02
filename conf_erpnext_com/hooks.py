@@ -13,10 +13,11 @@ app_version = "0.0.1"
 required_apps = ["frappe_theme"]
 
 website_context = {
-	"nav_brand": "ERPNext Conf",
-	"nav_links": [
-		("About", "/about")
-	]
+	"brand_html": "ERPNext Conf",
+	"top_bar_items": [
+		{"label": "About", "url":"/about", "right":1}
+	],
+	"hide_login": 1
 }
 
 
