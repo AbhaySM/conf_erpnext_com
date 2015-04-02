@@ -1,3 +1,9 @@
+.container,
+.navbar {
+	max-width: 800px;
+	margin: auto;
+}
+
 #page-videos .page-content {
 	padding-bottom: 0px;
 }
