@@ -1,0 +1,56 @@
+header {
+	display: none;
+}
+
+.conf-2015-hero {
+	background: linear-gradient(0deg, #3B3B80, #5E5FBE);
+	margin-top: 29px;
+}
+
+.conf-2015-hero .erpnext-conference {
+	margin-top: -36px;
+	font-size: 1.8em;
+	text-shadow: 0px 1px 1px #36414C;
+}
+
+.white {
+	color: white;
+}
+
+.brand-muted {
+	color: #b8b9de;
+}
+
+.brand-muted a:hover,
+.brand-muted a:focus,
+.brand-muted a:active {
+	color: white !important;
+}
+
+.speaking-at-the-conference .large-description {
+	max-width: 640px;
+	margin-bottom: 60px;
+}
+
+.conf-information li {
+	margin-bottom: 30px;
+}
+
+.who-should-attend .register {
+	font-size: 0.9em;
+	font-weight: 200;
+}
+
+@media(max-width: 767px) {
+	.speaking-at-the-conference .col-sm-4 {
+		text-align: center;
+	}
+
+	.speaking-at-the-conference .col-sm-4:not(:last-child) {
+		margin-bottom: 60px;
+	}
+
+	.who-should-attend .register {
+		font-size: 0.7em;
+	}
+}
