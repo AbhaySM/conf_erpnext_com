@@ -1,4 +1,4 @@
-header {
+header, footer {
 	display: none;
 }
 
@@ -7,10 +7,35 @@ header {
 	margin-top: 29px;
 }
 
+.conf-2015-hero .erp-hero {
+	width: 677px;
+	margin-top: -3.2em;
+	margin-bottom: -6em;
+}
+
 .conf-2015-hero .erpnext-conference {
 	margin-top: -36px;
-	font-size: 1.8em;
-	text-shadow: 0px 1px 1px #36414C;
+	font-size: 2.34em;
+	text-shadow: 0px 2px 2px rgba(1,2,2,0.1);
+}
+
+.conf-2015-hero .hero-date-location {
+	font-size: 0.9em;
+	letter-spacing: 0.07em;
+}
+
+.conf-2015-hero .hero-content h1 {
+	font-size: 1.9em;
+}
+
+.conf-2015-hero .hero-content p {
+	font-weight: 200;
+}
+
+.conf-2015-hero .hero-content p.sub-head {
+	margin-top: 20px;
+	max-width: 800px;
+	font-size: 1.35em;
 }
 
 .white {
