@@ -13,11 +13,12 @@ app_version = "0.0.1"
 required_apps = ["frappe_theme"]
 
 website_context = {
-	"brand_html": "<img class='erpnext-icon' src='/assets/frappe_theme/img/erp-icon.svg' />ERPNext Conference",
+	"brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/erp-icon.svg' />ERPNext Conference",
 	# "top_bar_items": [
 	# 	{"label": "Conf 2014", "url": "/2014", "right": 1}
 	# ],
-	"hide_login": 1
+	"hide_login": 1,
+	"favicon": "/assets/frappe_theme/img/favicon.ico"
 }
 
 
